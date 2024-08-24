@@ -16,7 +16,7 @@ namespace project1.Models
         [MaxLength(25)]
         public String Name { get; set; }
 
-        [Range(1,1000)]
+        [Range(1,1000,ErrorMessage ="Display order Must be Btw 1-1000")]
         [DisplayName("Display Order")]
         public int DisplayOrder { get; set; }
     }
